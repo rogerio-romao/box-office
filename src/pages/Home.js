@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   const onSearch = () => {
-    apiGet(`${searchOption}?q=${input}`).then(data => setResults(data));
+    apiGet(`/search/${searchOption}?q=${input}`).then(data => setResults(data));
   };
 
   const onKeyDown = evt => {
