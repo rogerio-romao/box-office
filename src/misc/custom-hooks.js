@@ -19,8 +19,9 @@ function usePersistedReducer(reducer, initialState, key) {
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(state));
-    return [state, dispatch];
   }, [state, key]);
+
+  return [state, dispatch];
 }
 
 export function useShows(key = 'shows') {
