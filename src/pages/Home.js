@@ -72,7 +72,7 @@ const Home = () => {
         </div>
         <div>
           <CustomRadio
-            label="People"
+            label="Actors"
             value="people"
             checked={!isShowsSearch}
             id="actors-search"
